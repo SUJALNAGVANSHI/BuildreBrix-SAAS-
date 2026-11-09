@@ -1,0 +1,33 @@
+{
+  "name": "builderbrix-fraud-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BuilderBrix — Real-Time Adaptive Fraud Intelligence Platform for Indian Citizens, Students, and Analysts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --import tsx tests/engine.test.ts && node --import tsx tests/fraud-pipeline.test.ts && node --import tsx tests/ocr.test.ts && node --import tsx tests/security.test.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "next": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0",
+    "tesseract.js": "^7.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
